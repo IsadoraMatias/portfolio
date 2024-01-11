@@ -1,6 +1,6 @@
 # My Portfolio
 
-This is my first portfolio, inspired by my favorite video games, Hollow Knight and Limbo. It was designed in Figma and developed using HTML, CSS, JavaScript, and the GSAP library for animations.
+This is my first portfolio version, inspired by my favorite video games, Hollow Knight and Limbo. It was designed in Figma and developed using HTML, CSS, JavaScript, and the GSAP library for animations.
 
 # Project Description
 
