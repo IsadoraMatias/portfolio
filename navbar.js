@@ -17,18 +17,26 @@ const toggleNavbarVisibility = () => {
     }
 };
 
-const closeNavbar = () => {
-    isNavbarExpanded = false;
-    navbarToggle.setAttribute('aria-expanded', isNavbarExpanded);
-    navbarMenu.style.opacity = '0';
-    navbarMenu.style.visibility = 'hidden';
-};
-
 navbarToggle.addEventListener('click', toggleNavbarVisibility);
 
-navbarLinks.forEach(link => {
-    link.addEventListener('click', closeNavbar);
-});
 
+if (window.innerWidth < 700) {
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', event => {
+           
+            isNavbarExpanded = false;
+            navbarToggle.setAttribute('aria-expanded', isNavbarExpanded);
+            navbarMenu.style.opacity = '0';
+            navbarMenu.style.visibility = 'hidden';
 
-
+          
+            const targetId = event.target.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                setTimeout(() => {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }, 100); 
+            }
+        });
+    });
+}
