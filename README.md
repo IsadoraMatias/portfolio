@@ -9,7 +9,7 @@ My portfolio is a personal website showcasing my work and skills as a web develo
 ## Deployment Link
 You can access my portfolio online here.
 
-[Portfolio Isadora](https://master--portafolioisa1.netlify.app/)
+[Portfolio Isadora](https://portafolioisa1.netlify.app/)
 
 ## Demo (Figma)
 You can view my project on Figma here.
